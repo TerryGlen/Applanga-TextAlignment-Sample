@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url 'https://maven.applanga.com/'}
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.applanga.com/'}
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "https://www.jitpack.io" }
+    }
+}
+rootProject.name = "Applanga TextAlignment Troubleshooting"
+include ':app'
